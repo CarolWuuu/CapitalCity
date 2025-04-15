@@ -21,18 +21,6 @@ Supported Capital Cities
 This API requires a token for access. Include the following header in your request:
 Authorization: Bearer supersecrettoken123
 
-**Example:**
-```bash
-curl -H "Authorization: Bearer supersecrettoken123" \
-"http://34.134.73.118:5000/api/time?capital=London"
-
-**Response:**
-{
-  "capital": "London",
-  "local_time": "2025-04-15 20:40:00",
-  "utc_offset": "+01:00"
-}
-
 ## Set up instruction
 1. clone repo:
 git clone https://github.com/CarolWUuu/CapitalCity.git
@@ -45,6 +33,19 @@ pip install -r requirements.txt
 
 3. run the app:
 python app.py
+
+**Example:**
+```bash
+curl -H "Authorization: Bearer supersecrettoken123" \
+"http://34.134.73.118:5000/api/time?capital=London"
+
+Response:
+{
+  "capital": "London",
+  "local_time": "2025-04-15 20:40:00",
+  "utc_offset": "+01:00"
+}
+
 
 
 
