@@ -23,15 +23,21 @@ Authorization: Bearer supersecrettoken123
 
 ## Set up instruction
 1. clone repo:
+   
 git clone https://github.com/CarolWUuu/CapitalCity.git
+
 cd CapitalCity
 
 2. Set up Python virtual environment (on GCP)
+
 python3 -m venv flask-env
+
 source flask-env/bin/activate
+
 pip install -r requirements.txt
 
 3. run the app:
+   
 python app.py
 
 **Example:**
